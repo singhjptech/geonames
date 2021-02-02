@@ -1,0 +1,133 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+    <meta charset="utf-8">
+		<title>Geonames Project</title>
+		<meta name="description" content="Geonames">
+		<meta name="author" content="Jatinder Singh">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="libs/css/main.css">
+    <link rel="stylesheet" href="libs/css/bootstrap.min.css">
+  </head>
+	<body>
+      <!-- <input type="text" class="form-control" placeholder="Postcode" id="postcode">     
+      <button type="button" class="btn btn-primary ml-2" id="btnRun">Submit</button>
+      <button type="button" class="btn btn-primary ml-2" id="refresh">Refresh</button> -->
+      <div class="container-fluid">
+          <div class="pro_title row">
+            <div class="col-10"><h1>Geonames Project</h1></div>
+              <div class="col-2">
+                <button type="button" class="btn btn-primary ml-2" id="refresh">Refresh</button>
+              </div>
+          </div>
+          <div class="pro_content">
+            <table class="table table-striped p2">
+              <thead class="thead-dark">
+                <th>API</th>
+                <th colspan="2">API Description</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="justify-content-center">1.Address Search</td>
+                  <td>
+                    <div>
+                      Input PostCode or Zip code
+                    </div>
+                    <div>
+                      Returns the address information
+                    </div>
+                    <div class="postcode row">
+                      <label for="postcode" class="col-2 my-0 px-2">PostCode:</label>
+                      <input type="text" class="form-control col-5" placeholder="Postcode" id="postcode">
+                    </div>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-primary ml-2" id="btnRun1">Submit</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="justify-content-center">2.Country Statistics</td>
+                  <td>
+                    <div>
+                      Returns the areas and population of the country.
+                    </div>
+                    <div class="postcode row">
+                      <label for="postcode" class="col-2 my-0 px-2">Country:</label>
+                      <input type="text" class="form-control col-5" placeholder="Country" id="statistics">
+                    </div>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-primary ml-2" id="btnRun2">Submit</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="justify-content-center">3.Timezone convert</td>
+                  <td>
+                    <div>
+                      Returns Temperature, Weather Condition and Humidity
+                    </div>
+                    <div class="postcode row">
+                      <label for="postcode" class="col-3 my-0 px-2">Location:</label>
+                      <input type="text" class="form-control col-5" placeholder="location..." id="country_weather">
+                    </div>
+                  </td>
+                  <td>
+                    <button type="button" class="btn btn-primary ml-2" id="btnRun3">Submit</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <div><h1><b>Result</b></h1></div>
+                    <div class="result1">
+                      <table class="table table-striped p2">
+                          <thead class="thead-dark">
+                            <th>Place</th>
+                            <th>Postcode</th>
+                            <th>Country Code</th>
+                            <th>Country</th>
+                            <th>Area</th>
+                            <th>District</th>
+                          </thead>
+                          <tbody id="data1">
+                          </tbody>
+                      </table>
+                    </div>
+                    <div class="result2">
+                      <table class="table table-striped p2">
+                          <thead class="thead-dark">
+                            <th>Country</th>
+                            <th>Area in km2</th>
+                            <th>Population</th>
+                          </thead>
+                          <tbody id="data2">
+                          </tbody>
+                      </table>
+                    </div>
+                    <div class="result3">
+                      <table class="table table-striped p2">
+                          <thead class="thead-dark">
+                            <th>Temp C</th>
+                            <th>Weather Condition</th>
+                            <th>Humidity</th>
+                          </thead>
+                          <tbody id="data3">
+                          </tbody>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+
+</body>
+
+    <script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+		<script type="application/javascript" src="libs/js/script.js"></script>
+
+</html>
+
