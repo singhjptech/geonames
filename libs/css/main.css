@@ -1,6 +1,13 @@
-body{
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0%;
+  min-height: 100vh;
   background-color: #ddeeff;
 }
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -16,6 +23,7 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -26,17 +34,21 @@ input[type=text], select, textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
+
 #postcode{
   margin: 0!important;
 }
+
 .postcode{
   justify-content: center;
   display: flex;
   align-items: center;
 }
+
 th,td{
   text-align: center!important;
 }
+
 input[type=submit] {
   background-color: #4CAF50;
   color: white;
@@ -49,9 +61,11 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #45a049;
 }
+
 form input{
   background-color: red !;
 }
+
 .pro_title{
   text-align: center;
   margin-top: 100px;
